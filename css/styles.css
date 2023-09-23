@@ -522,15 +522,44 @@ footer {
 
 .modal {
     position: relative;
+    top: 50%;
+    left: 50%;
     background-color: var(--dairy); 
     border-radius: 4px;
     width: 408px;
     height: 584px;
-    padding: 24px;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 24px;
+    right: 24px;
+    border: none;
+    border-radius: 50%;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    fill: var(--white);/*TODO*/
+    background-color: var(--ocean);/*TODO*/
+    border: none;
+}
+
+.form-checkbox-input:checked + 
+.form-checkbox-label 
+.form-checkbox-click {
+    background-color: var(--ocean);
+    fill:#F4F4FD;
+}
+
+.form-checkbox-input:checked +
+.form-checkbox-label 
+.form-checkbox-click 
+.form-checkbox-icon {
+    opacity: 1;
+}
+
+.form-checkbox-icon {
+    opacity: 0;
 }
