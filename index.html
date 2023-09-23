@@ -50,7 +50,8 @@
             <div class="container">
                 <h1 class="hero-title">Effective Solutions 
                 for Your Business</h1>
-                <button class="hero-button" type="button" >Order Service</button>
+                <button class="hero-button" type="button" 
+                data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -406,5 +407,43 @@
             </div>
         </div>
     </footer>
+
+<!--Modal-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <form class="form" name="user_contacts" 
+                aurocomplete="off">
+                <h2 class="form-title">
+                Leave your contacts and we will call you back
+                </h2>
+                <label for="form-label">Name
+                    <input class="form-input" type="text"
+                    name="user_name"/>
+                    <svg class="" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+                </label>
+                <label for="form-label">Phone
+                    <input class="form-input" type="text"
+                    name="user_phone" />
+                </label>
+                <label for="form-label">Email
+                    <input class="form-input" type="text"
+                    name="user_email" />
+                </label>
+                <label for="form-label">Comment
+                    <input class="form-input" type="text" 
+                    name="user_comment" />
+                </label>
+                <div class="form-checkbox">
+                    <svg>
+                        
+                    </svg>
+                </div>
+                
+            </form>
+        </div>
+    </div> 
+
 </body>
 </html>
