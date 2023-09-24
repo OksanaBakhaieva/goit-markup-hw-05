@@ -696,6 +696,7 @@ footer {
 
 .modal-input:focus {
   border: 1px solid var(--iris);
+  fill: var(--iris);
 }
 
 .modal-field-icon {
@@ -807,13 +808,15 @@ footer {
   width: 100%;
 }
 
-.modal-checkbox-input: checked + .modal-checkbox-label .modal-checkbox-link {
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-link {
   background-color: var(--ocean);
   fill: var(--cloud);
   border: none;
 }
 
-.modal-checkbox-input: checked + .modal-checkbox-label .modal-checkbox-link
+.modal-checkbox-input:checked
+  + .modal-checkbox-label
+  .modal-checkbox-link
   .modal-checkbox-icon {
   opacity: 1;
 }
