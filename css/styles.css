@@ -807,7 +807,7 @@ footer {
   width: 100%;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-link {
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-click {
   background-color: var(--ocean);
   fill: var(--cloud);
   border: none;
@@ -815,7 +815,7 @@ footer {
 
 .modal-checkbox-input:checked
   + .modal-checkbox-label
-  .modal-checkbox-link
+  .modal-checkbox-clik
   .modal-checkbox-icon {
   opacity: 1;
 }
