@@ -815,9 +815,12 @@ footer {
 
 .modal-checkbox-input:checked
   + .modal-checkbox-label
-  .modal-checkbox-clik
+  > .modal-checkbox-clik
   .modal-checkbox-icon {
   opacity: 1;
+}
+.modal-checkbox-click .modal-checkbox-icon {
+  fill: var(--white);
 }
 
 .modal-checkbox-click {
@@ -835,7 +838,7 @@ footer {
 }
 
 .modal-checkbox-icon {
-  fill: transparent;
+  stroke: transparent;
   color: rgb(142, 143, 153);
   fill: rgba(0, 0, 0, 0);
   font-size: 12px;
